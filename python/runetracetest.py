@@ -54,33 +54,33 @@ class App(tk.Tk):
             y=Fire.stageOneY(x/RESOLUTION,fib1,self.scale,self.nthFib)
             coords=self.zeroToTrueCoord(x/RESOLUTION,y)
             self.canvas.create_oval(coords[0],coords[1],coords[0],coords[1],
-                    fill="blue",width=2)
+                    outline="blue",width=2)
         for x in range(fib1*RESOLUTION,fib3*RESOLUTION,1):
             y=Fire.stageTwoY(x/RESOLUTION,fib2,self.scale,self.nthFib)
             coords=self.zeroToTrueCoord(x/RESOLUTION,y)
             self.canvas.create_oval(coords[0],coords[1],coords[0],coords[1],
-                    fill="red",width=2)
+                    outline="red",width=2)
         for x in range(0,fib3*RESOLUTION,1):
             y=Fire.stageThreeY(x/RESOLUTION,fib3,self.scale,self.nthFib)
             coords=self.zeroToTrueCoord(x/RESOLUTION,y)
             self.canvas.create_oval(coords[0],coords[1],coords[0],coords[1],
-                    fill="blue",width=2)
+                    outline="blue",width=2)
         fib4 = fib2+fib3
         for x in range(-1*fib4*RESOLUTION,0,1):
             y=Fire.stageFourY(x/RESOLUTION,fib4)
             coords=self.zeroToTrueCoord(x/RESOLUTION,y)
             self.canvas.create_oval(coords[0],coords[1],coords[0],coords[1],
-                    fill="red",width=2)
+                    outline="red",width=2)
         for x in range(-1*fib4*RESOLUTION,0,1):
             y=Fire.stageFiveY(x/RESOLUTION,fib4)
             coords=self.zeroToTrueCoord(x/RESOLUTION,y)
             self.canvas.create_oval(coords[0],coords[1],coords[0],coords[1],
-                    fill="blue",width=2)
+                    outline="blue",width=2)
         for x in range(0,fib1*RESOLUTION,1):
             y=Fire.stageSixY(x/RESOLUTION,fib1,self.scale, self.nthFib)
             coords=self.zeroToTrueCoord(x/RESOLUTION,y)
             self.canvas.create_oval(coords[0],coords[1],coords[0],coords[1],
-                    fill="red",width=2)
+                    outline="red",width=2)
 
     def zeroToTrueCoord(self, x, y):
         if(abs(x) > CANVASWIDTH/2 or abs(y)>CANVASHEIGHT/2):
