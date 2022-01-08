@@ -15,7 +15,8 @@ class App(tk.Tk):
         self.title("Rune Trace Test")
         self.canvas = tk.Canvas(self, width=CANVASWIDTH, height=CANVASHEIGHT)
         self.canvas.pack()
-        self.scale = 45
+        self.scale = 10
+        self.scale_mod = 0
         self.status = tk.StringVar()
         self.status.set("None")
         self.statusLabel = tk.Label(self.canvas, textvariable=self.status)
@@ -62,8 +63,33 @@ class App(tk.Tk):
                     return
                 d = distance(rune_mp[0],rune_mp[1],zeroed_cursor[0],zeroed_cursor[1])
                 if(d > WIGGLE):
-                    self.status.set("None")
-                    return
+                    if(self.scale_mod == 0):
+                        if(zeroed_cursor[0] > rune_mp[0]):
+                            self.scale_mod = -1
+                            self.scale -= 1
+                        elif(zeroed_cursor[0] < rune_mp[0]):
+                            self.scale_mod = 1
+                            self.scale += 1
+                        else:
+                            print("Should never get here. Cursor to MP distance > {0} but Cursor x: {1} == MP x {2}".format(WIGGLE,zeroed_cursor[0],rune_mp[0]))
+                    elif(self.scale_mod < 0):
+                        if(zeroed_cursor[0] > rune_mp[0]):
+                            self.scale -= 1
+                        elif(zeroed_cursor[0] < rune_mp[0]):
+                            self.scale_mod = 0
+                            self.status.set("None")
+                            return
+                        else:
+                            print("Should never get here. Cursor to MP distance > {} but Cursor x == MP x".format(WIGGLE))
+                    else:
+                        if(zeroed_cursor[0] > rune_mp[0]):
+                            self.scale_mod = 0
+                            self.status.set("None")
+                            return
+                        elif(zeroed_cursor[0] < rune_mp[0]):
+                            self.scale += 1
+                        else:
+                            print("Should never get here. Cursor to MP distance > {} but Cursor x == MP x".format(WIGGLE))
                 stage2_start_y = Fire.stageTwoY(fib1,fib1,fib2,fib3)
                 stage2_start_x = Fire.stageTwoX(stage2_start_y,fib1,fib2)
                 d = distance(zeroed_cursor[0],zeroed_cursor[1], stage2_start_x,
