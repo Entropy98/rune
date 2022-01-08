@@ -140,7 +140,7 @@ class Fire():
 
     def stageSixX(y,s1,s4):
         '''
-        @brief      calculates stage five given y: \f\x=sqrt{(s_1^2-(y-(7+4(s_1)))^2)}\fmath.sqrt(s1^2-y-(7+4(s1-1))^2)
+        @brief      calculates stage five given y: x=sqrt(s1^2-y-(7+4(s1-1))^2)
         @param      y - y coordinate of rune stage; Type: float
                     s1 - first value in relative fib sequence; Type: float
                     s4 - fourth value in relative fib sequence; Type: float
