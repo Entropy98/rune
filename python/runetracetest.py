@@ -1,3 +1,10 @@
+"""@package docstring
+runetracetest.py
+@date Jan 8, 2022
+@author Harper Weigle
+@brief main app for rune trace test. Handles main loop and core app functions
+"""
+
 import sys
 import tkinter as tk
 
@@ -10,7 +17,25 @@ RESOLUTION = 100
 WIGGLE = 20
 
 class App(tk.Tk):
+    '''
+    @brief  core app class handles tkinter root functions as well as core app functions. Must be initialized before functional
+            Child of tk.Tk
+    '''
     def __init__(self):
+        '''
+        @brief      Initializes:
+                    super()
+                    title - tk app title; Type: tk.title
+                    canvas - app window; Type: tk.canvas
+                    scale - starting value of relative fib sequence; Type: int
+                    scale_mod - 0 = Null, >0 = Grow, <0 = Shrink; Type: int
+                    status - stage of rune user is in; Type: tk.StringVar
+                    statusLabel - status displayed on canvas; Type: tk.Label
+
+                    binds mouse motion to checkCursor()
+        @param      None
+        @returns    None
+        '''
         super().__init__()
         self.title("Rune Trace Test")
         self.canvas = tk.Canvas(self, width=CANVASWIDTH, height=CANVASHEIGHT)
@@ -24,6 +49,11 @@ class App(tk.Tk):
         self.canvas.bind('<Motion>', self.checkCursor)
 
     def update(self):
+        '''
+        @brief      clears canvas, redraws canvas items, and reschedules self
+        @param     None
+        @returns    None
+        '''
         self.canvas.delete("all")
         self.drawCoordPlane()
         self.drawFireRune()
@@ -32,10 +62,20 @@ class App(tk.Tk):
         self.canvas.after(1000, self.update)
 
     def drawCoordPlane(self):
+        '''
+        @brief      Draws cartesian plane
+        @param     None
+        @returns    None
+        '''
         self.canvas.create_line(CANVASWIDTH/2,0,CANVASWIDTH/2,CANVASHEIGHT)
         self.canvas.create_line(0,CANVASHEIGHT/2,CANVASWIDTH,CANVASHEIGHT/2)
 
     def checkCursor(self, e):
+        '''
+        @brief      Checks cursor location relative to rune. Updates status, scale_mod, and scale
+        @param     e - trigger event; Type: tk.Event
+        @returns    None
+        '''
         fib1 = self.scale
         fib2 = fib1+1
         fib3 = fib1+fib2
@@ -260,6 +300,11 @@ class App(tk.Tk):
                         print("Fire Rune Complete")
 
     def drawFireRune(self):
+        '''
+        @brief      draws fire rune based on stages defined in rune.py
+        @param     None
+        @returns    None
+        '''
         y=0
         fib1 = self.scale
         fib2 = fib1+1
@@ -297,16 +342,33 @@ class App(tk.Tk):
                     outline="red",width=2)
 
     def zeroToTrueCoord(self, x, y):
+        '''
+        @brief      Converts coordinates relative to the cartesian plane to coordinates relative to the canvas
+        @param     x - x coordinate; Type: float
+                    y - y coordinate; Type: float
+        @returns    Converted coordinates; Type: tuple(float,float)
+        '''
         if(abs(x) > CANVASWIDTH/2 or abs(y) > CANVASHEIGHT/2):
             print("Error: coordinate out of bounds")
         return (CANVASWIDTH/2+x,CANVASHEIGHT-(CANVASHEIGHT/2+y))
 
     def trueToZeroCoord(self, x, y):
+        '''
+        @brief      Converts coordinates relative to the canvas to coordinates relative to the cartesian plane
+        @param     x - x coordinate; Type: float
+                    y - y coordinate; Type: float
+        @returns    Converted coordinates; Type: tuple(float,float)
+        '''
         if(x < 0 or x > CANVASWIDTH or y < 0 or y > CANVASHEIGHT):
             print("Error: coordinate out of bounds")
         return (x-CANVASWIDTH/2,(-1*y)+(CANVASHEIGHT/2))
 
 def main():
+    '''
+    @brief      initializes app, starts app.update recursive cycle, executes mainloop
+    @param     None
+    @returns    None
+    '''
     app = App()
     app.update()
     app.canvas.mainloop()
