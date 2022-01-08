@@ -1,51 +1,62 @@
 import math
 
-def calcStageOneOffset(s, fibCalc, x=1, y=0, i=1):
-    if(i > s):
-        return (x,y)
-    return calcStageOneOffset(s,fibCalc,fibCalc(i),fibCalc(i)-1,i+1)
-
-def calcStageTwoOffset(s, fibCalc, x=1, y=1, i=1):
-    if(i > s):
-        return (x,y)
-    return calcStageTwoOffset(s,fibCalc,fibCalc(i),y+fibCalc(i-1),i+1)
-
-def calcStageThreeOffset(s,fibCalc,y=1,i=1):
-    if(i > s):
-        return y
-    return calcStageThreeOffset(s,fibCalc,y+fibCalc(i-1),i+1)
-
-def calcStageSixOffset(s,fibCalc,y=7,i=1):
-    if(i > s):
-        return y
-    return calcStageSixOffset(s,fibCalc,y+2*fibCalc(i),i+1)
-
 class Fire():
-    def stageOneY(x,fib,s,fibCalc):
-        offset = calcStageOneOffset(s, fibCalc)
-        return math.sqrt(abs(fib)**2-(abs(x)-offset[0])**2)-offset[1]
+    def stageOneY(x,s1):
+        if(x > s1 or x < 0):
+            return None
+        return math.sqrt(abs(s1)**2-(abs(x-s1))**2)-(s1-1)
 
-    def stageOneX(y,fib,s,fibCalc):
-        offset = calcStageOneOffset(s, fibCalc)
-        return math.sqrt(abs(fib)**2-(abs(y)-offset[1])**2)-offset[0]
+    def stageOneX(y,s1):
+        if(y > s1 or y < -1*(s1-1)):
+            return None
+        return -1*(math.sqrt(abs(s1)**2-abs(y+(s1-1))**2)-s1)
 
-    def stageTwoY(x,fib,s,fibCalc):
-        offset = calcStageTwoOffset(s, fibCalc)
-        return math.sqrt(abs(fib)**2-(abs(x)-offset[0])**2)-offset[1]
+    def stageTwoY(x,s1,s2,s3):
+        if(x < s1 or x > s3):
+            return None
+        return math.sqrt(abs(s2)**2-(abs(x-s1))**2)-s1
 
-    def stageTwoX(y,fib,s,fibCalc):
-        offset = calcStageTwoOffset(s, fibCalc)
-        return math.sqrt(abs(fib)**2-(abs(y)-offset[1])**2)-offset[0]
+    def stageTwoX(y,s1,s2):
+        if(y > 1 or y < -1*s1):
+            return None
+        return math.sqrt(abs(s2)**2-(abs(y+s1))**2)+s1
 
-    def stageThreeY(x,fib,s,fibCalc):
-        return -1*math.sqrt(abs(fib)**2-abs(x)**2)-calcStageThreeOffset(s,fibCalc)
+    def stageThreeY(x,s1,s3):
+        if(x < 0 or x > s3):
+            return None
+        return -1*math.sqrt(abs(s3)**2-abs(x)**2)-s1
 
-    def stageFourY(x,fib):
-        return -1*math.sqrt(abs(fib)**2-abs(x)**2)+1
+    def stageThreeX(y,s1,s3,s4):
+        if(y > -1*s1 or y < -1*s4):
+            return None
+        return math.sqrt(abs(s3)**2-abs(y+s1)**2)
 
-    def stageFiveY(x,fib):
-        return math.sqrt(abs(fib)**2-abs(x)**2)+1
+    def stageFourY(x,s4):
+        if(x > 0 or x < -1*s4):
+            return None
+        return -1*math.sqrt(abs(s4)**2-abs(x)**2)+1
 
-    def stageSixY(x,fib,s,fibCalc):
-        return -1*math.sqrt(abs(fib)**2-abs(x)**2)+calcStageSixOffset(s,fibCalc)
+    def stageFourX(y,s4):
+        if(y < -1*s4 or y > 0):
+            return None
+        return -1*math.sqrt(abs(s4)**2-abs(y-1)**2)
 
+    def stageFiveY(x,s4):
+        if(x > 0 or x < -1*s4):
+            return None
+        return math.sqrt(abs(s4)**2-abs(x)**2)+1
+
+    def stageFiveX(y,s4):
+        if(y > 0 or y < s4+1):
+            return None
+        return -1*math.sqrt(abs(s4)**2-abs(y-1)**2)
+
+    def stageSixY(x,s1):
+        if(x < 0 or x > s1):
+            return None
+        return -1*math.sqrt(abs(s1)**2-abs(x)**2)+(7+4*(s1-1))
+
+    def stageSixX(y,s1,s4):
+        if(y > 7+4*(s-1) or y < s4):
+            return None
+        return math.sqrt(abs(s1)**2-abs(y-(7+4*(s1-1)))**2)
