@@ -7,7 +7,7 @@ class Fire():
         return math.sqrt(abs(s1)**2-(abs(x-s1))**2)-(s1-1)
 
     def stageOneX(y,s1):
-        if(y > s1 or y < -1*(s1-1)):
+        if(y > 1 or y < -1*(s1-1)):
             return None
         return -1*(math.sqrt(abs(s1)**2-abs(y+(s1-1))**2)-s1)
 
@@ -27,7 +27,7 @@ class Fire():
         return -1*math.sqrt(abs(s3)**2-abs(x)**2)-s1
 
     def stageThreeX(y,s1,s3,s4):
-        if(y > -1*s1 or y < -1*s4):
+        if(y > -1*s1 or y < -1*(s4-1)):
             return None
         return math.sqrt(abs(s3)**2-abs(y+s1)**2)
 
@@ -37,7 +37,7 @@ class Fire():
         return -1*math.sqrt(abs(s4)**2-abs(x)**2)+1
 
     def stageFourX(y,s4):
-        if(y < -1*s4 or y > 0):
+        if(y < -1*(s4-1) or y > 0):
             return None
         return -1*math.sqrt(abs(s4)**2-abs(y-1)**2)
 
@@ -47,7 +47,7 @@ class Fire():
         return math.sqrt(abs(s4)**2-abs(x)**2)+1
 
     def stageFiveX(y,s4):
-        if(y > 0 or y < s4+1):
+        if(y < 0 or y > s4+1):
             return None
         return -1*math.sqrt(abs(s4)**2-abs(y-1)**2)
 
@@ -57,6 +57,6 @@ class Fire():
         return -1*math.sqrt(abs(s1)**2-abs(x)**2)+(7+4*(s1-1))
 
     def stageSixX(y,s1,s4):
-        if(y > 7+4*(s-1) or y < s4):
+        if(y > 7+4*(s1-1) or y < s4):
             return None
         return math.sqrt(abs(s1)**2-abs(y-(7+4*(s1-1)))**2)

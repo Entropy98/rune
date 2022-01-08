@@ -71,36 +71,167 @@ class App(tk.Tk):
                 if(d < WIGGLE):
                     self.status.set("Stage Two")
             elif(self.status.get() == "Stage Two"):
-                rune_y = Fire.stageTwoY(zeroed_cursor[0],fib1,fib2,fib3)
-                rune_x = Fire.stageTwoX(zeroed_cursor[1],fib1,fib2)
-                #TODO out of bounds does not find nearest point. Instead it just uses valid coordinate
-                if(rune_y is not None and rune_x is not None):
-                    print("flag1")
-                    rune_mp = midpoint(rune_x,zeroed_cursor[1],zeroed_cursor[0],
-                            rune_y)
-                elif(rune_y is None and rune_x is not None):
-                    print("flag2")
-                    new_y = Fire.stageTwoY(rune_x, fib1, fib2, fib3)
-                    rune_mp = (rune_x, new_y)
-                elif(rune_x is None and rune_y is not None):
-                    print("flag3")
-                    new_x = Fire.stageTwoX(rune_y, fib1, fib2)
-                    rune_mp = (new_x, rune_y)
+                stage2_start_y = Fire.stageTwoY(fib1,fib1,fib2,fib3)
+                stage2_start_x = Fire.stageTwoX(stage2_start_y,fib1,fib2)
+                d = distance(zeroed_cursor[0],zeroed_cursor[1], stage2_start_x,
+                    stage2_start_y)
+                if(d < WIGGLE):
+                    self.status.set("Stage Two")
                 else:
-                    print("flag4")
-                    self.status.set("None")
-                    return
-                d = distance(rune_mp[0],rune_mp[1],zeroed_cursor[0],zeroed_cursor[1])
-                print(d)
-                if(d > WIGGLE):
-                    self.status.set("None")
-                    return
-                stage3_start_y = Fire.stageThreeY(0,fib1,fib3)
-                stage3_start_x = Fire.stageThreeX(stage2_start_y,fib1,fib3,fib4)
-                d = distance(zeroed_cursor[0],zeroed_cursor[1], stage3_start_x,
-                    stage3_start_y)
+                    rune_y = Fire.stageTwoY(zeroed_cursor[0],fib1,fib2,fib3)
+                    rune_x = Fire.stageTwoX(zeroed_cursor[1],fib1,fib2)
+                    #TODO out of bounds does not find nearest point. Instead it just uses valid coordinate
+                    if(rune_y is not None and rune_x is not None):
+                        rune_mp = midpoint(rune_x,zeroed_cursor[1],zeroed_cursor[0],
+                                rune_y)
+                    elif(rune_y is None and rune_x is not None):
+                        new_y = Fire.stageTwoY(rune_x, fib1, fib2, fib3)
+                        rune_mp = (rune_x, new_y)
+                    elif(rune_x is None and rune_y is not None):
+                        new_x = Fire.stageTwoX(rune_y, fib1, fib2)
+                        rune_mp = (new_x, rune_y)
+                    else:
+                        self.status.set("None")
+                        return
+                    d = distance(rune_mp[0],rune_mp[1],zeroed_cursor[0],zeroed_cursor[1])
+                    if(d > WIGGLE):
+                        self.status.set("None")
+                        return
+                    stage3_start_y = Fire.stageThreeY(fib3,fib1,fib3)
+                    stage3_start_x = Fire.stageThreeX(stage3_start_y,fib1,fib3,fib4)
+                    d = distance(zeroed_cursor[0],zeroed_cursor[1], stage3_start_x,
+                        stage3_start_y)
+                    if(d < WIGGLE):
+                        self.status.set("Stage Three")
+            elif(self.status.get() == "Stage Three"):
+                stage3_start_y = Fire.stageThreeY(fib3,fib1,fib3)
+                stage3_start_x = Fire.stageThreeX(stage3_start_y,fib1,fib3,fib4)
+                d = distance(zeroed_cursor[0],zeroed_cursor[1], stage3_start_x, stage3_start_y)
                 if(d < WIGGLE):
                     self.status.set("Stage Three")
+                else:
+                    rune_y = Fire.stageThreeY(zeroed_cursor[0],fib1,fib3)
+                    rune_x = Fire.stageThreeX(zeroed_cursor[1],fib1,fib3,fib4)
+                    #TODO out of bounds does not find nearest point. Instead it just uses valid coordinate
+                    if(rune_y is not None and rune_x is not None):
+                        rune_mp = midpoint(rune_x,zeroed_cursor[1],zeroed_cursor[0],
+                                rune_y)
+                    elif(rune_y is None and rune_x is not None):
+                        new_y = Fire.stageThreeY(rune_x, fib1, fib3)
+                        rune_mp = (rune_x, new_y)
+                    elif(rune_x is None and rune_y is not None):
+                        new_x = Fire.stageThreeX(rune_y, fib1, fib3, fib4)
+                        rune_mp = (new_x, rune_y)
+                    else:
+                        self.status.set("None")
+                        return
+                    d = distance(rune_mp[0],rune_mp[1],zeroed_cursor[0],zeroed_cursor[1])
+                    if(d > WIGGLE):
+                        self.status.set("None")
+                        return
+                    stage4_start_y = Fire.stageFourY(0,fib4)
+                    stage4_start_x = Fire.stageFourX(stage4_start_y,fib4)
+                    d = distance(zeroed_cursor[0],zeroed_cursor[1], stage4_start_x,
+                        stage4_start_y)
+                    if(d < WIGGLE):
+                        self.status.set("Stage Four")
+            elif(self.status.get() == "Stage Four"):
+                stage4_start_y = Fire.stageFourY(0,fib4)
+                stage4_start_x = Fire.stageFourX(stage4_start_y,fib4)
+                d = distance(zeroed_cursor[0],zeroed_cursor[1], stage4_start_x, stage4_start_y)
+                if(d < WIGGLE):
+                    self.status.set("Stage Four")
+                else:
+                    rune_y = Fire.stageFourY(zeroed_cursor[0],fib4)
+                    rune_x = Fire.stageFourX(zeroed_cursor[1],fib4)
+                    #TODO out of bounds does not find nearest point. Instead it just uses valid coordinate
+                    if(rune_y is not None and rune_x is not None):
+                        rune_mp = midpoint(rune_x,zeroed_cursor[1],zeroed_cursor[0],
+                                rune_y)
+                    elif(rune_y is None and rune_x is not None):
+                        new_y = Fire.stageFourY(rune_x,fib4)
+                        rune_mp = (rune_x, new_y)
+                    elif(rune_x is None and rune_y is not None):
+                        new_x = Fire.stageFourX(rune_y,fib4)
+                        rune_mp = (new_x, rune_y)
+                    else:
+                        self.status.set("None")
+                        return
+                    d = distance(rune_mp[0],rune_mp[1],zeroed_cursor[0],zeroed_cursor[1])
+                    if(d > WIGGLE):
+                        self.status.set("None")
+                        return
+                    stage5_start_y = Fire.stageFiveY(-1*fib4,fib4)
+                    stage5_start_x = Fire.stageFiveX(stage5_start_y,fib4)
+                    d = distance(zeroed_cursor[0],zeroed_cursor[1], stage5_start_x,
+                        stage5_start_y)
+                    if(d < WIGGLE):
+                        self.status.set("Stage Five")
+            elif(self.status.get() == "Stage Five"):
+                stage5_start_y = Fire.stageFiveY(-1*fib4,fib4)
+                stage5_start_x = Fire.stageFiveX(stage5_start_y,fib4)
+                d = distance(zeroed_cursor[0],zeroed_cursor[1], stage5_start_x, stage5_start_y)
+                if(d < WIGGLE):
+                    self.status.set("Stage Five")
+                else:
+                    rune_y = Fire.stageFiveY(zeroed_cursor[0],fib4)
+                    rune_x = Fire.stageFiveX(zeroed_cursor[1],fib4)
+                    #TODO out of bounds does not find nearest point. Instead it just uses valid coordinate
+                    if(rune_y is not None and rune_x is not None):
+                        rune_mp = midpoint(rune_x,zeroed_cursor[1],zeroed_cursor[0],
+                                rune_y)
+                    elif(rune_y is None and rune_x is not None):
+                        new_y = Fire.stageFiveY(rune_x,fib4)
+                        rune_mp = (rune_x, new_y)
+                    elif(rune_x is None and rune_y is not None):
+                        new_x = Fire.stageFiveX(rune_y,fib4)
+                        rune_mp = (new_x, rune_y)
+                    else:
+                        self.status.set("None")
+                        return
+                    d = distance(rune_mp[0],rune_mp[1],zeroed_cursor[0],zeroed_cursor[1])
+                    if(d > WIGGLE):
+                        self.status.set("None")
+                        return
+                    stage6_start_y = Fire.stageSixY(0,fib1)
+                    stage6_start_x = Fire.stageSixX(stage6_start_y,fib1,fib4)
+                    d = distance(zeroed_cursor[0],zeroed_cursor[1], stage6_start_x,
+                        stage6_start_y)
+                    if(d < WIGGLE):
+                        self.status.set("Stage Six")
+            elif(self.status.get() == "Stage Six"):
+                stage6_start_y = Fire.stageSixY(0,fib1)
+                stage6_start_x = Fire.stageSixX(stage6_start_y,fib1,fib4)
+                d = distance(zeroed_cursor[0],zeroed_cursor[1], stage6_start_x, stage6_start_y)
+                if(d < WIGGLE):
+                    self.status.set("Stage Six")
+                else:
+                    rune_y = Fire.stageSixY(zeroed_cursor[0],fib1)
+                    rune_x = Fire.stageSixX(zeroed_cursor[1],fib1,fib4)
+                    #TODO out of bounds does not find nearest point. Instead it just uses valid coordinate
+                    if(rune_y is not None and rune_x is not None):
+                        rune_mp = midpoint(rune_x,zeroed_cursor[1],zeroed_cursor[0],
+                                rune_y)
+                    elif(rune_y is None and rune_x is not None):
+                        new_y = Fire.stageSixY(rune_x,fib1)
+                        rune_mp = (rune_x, new_y)
+                    elif(rune_x is None and rune_y is not None):
+                        new_x = Fire.stageSixX(rune_y,fib1,fib4)
+                        rune_mp = (new_x, rune_y)
+                    else:
+                        self.status.set("None")
+                        return
+                    d = distance(rune_mp[0],rune_mp[1],zeroed_cursor[0],zeroed_cursor[1])
+                    if(d > WIGGLE):
+                        self.status.set("None")
+                        return
+                    stage6_end_y = Fire.stageSixY(fib1,fib1)
+                    stage6_end_x = Fire.stageSixX(stage6_end_y,fib1,fib4)
+                    d = distance(zeroed_cursor[0],zeroed_cursor[1], stage6_end_x,
+                        stage6_end_y)
+                    if(d < WIGGLE):
+                        self.status.set("None")
+                        print("Fire Rune Complete")
 
     def drawFireRune(self):
         y=0
