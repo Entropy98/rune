@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="UnrealFileServer">
+  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/UnrealFileServer/UnrealFileServer.Target.cs" />
+  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/UnrealFileServer/UnrealFileServer.Build.cs" />
+  <VirtualDirectory Name="Private">
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/UnrealFileServer/Private/UnrealFileServer.cpp" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/UnrealFileServer/Private/UnrealFileServer.h" />
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer-Linux-Debug" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer-Linux-DebugGame" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer-Linux-Shipping" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer-Linux-Test" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./UnrealFileServer-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh UnrealFileServer Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

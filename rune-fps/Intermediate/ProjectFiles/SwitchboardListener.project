@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="SwitchboardListener">
+  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/SwitchboardListener.Target.cs" />
+  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/SwitchboardListener.Build.cs" />
+  <VirtualDirectory Name="Private">
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/CpuUtilizationMonitor.cpp" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/CpuUtilizationMonitor.h" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardListener.cpp" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardListener.h" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardListenerApp.h" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardListenerMain.cpp" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardListenerVersion.h" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardMessageFuture.h" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardPacket.h" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardProtocol.cpp" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardProtocol.h" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SwitchboardTasks.h" />
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/SyncStatus.h" />
+    <VirtualDirectory Name="Windows">
+      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/Windows/WindowsCpuUtilizationMonitor.cpp" />
+      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/Windows/WindowsCpuUtilizationMonitor.h" />
+      <VirtualDirectory Name="Resources">
+        <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/SwitchboardListener/Private/Windows/Resources/Resource.h" />
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener-Linux-Debug" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener-Linux-DebugGame" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener-Linux-Shipping" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener-Linux-Test" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./SwitchboardListener-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh SwitchboardListener Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

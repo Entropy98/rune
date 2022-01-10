@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="DatasmithSketchUpRuby2019">
+  <VirtualDirectory Name="nrealEngine">
+    <VirtualDirectory Name="Engine">
+      <VirtualDirectory Name="Source">
+        <VirtualDirectory Name="Programs">
+          <VirtualDirectory Name="Enterprise">
+            <VirtualDirectory Name="Datasmith">
+              <VirtualDirectory Name="DatasmithSketchUpRubyExporter">
+                <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/DatasmithSketchUpRuby2019.Target.cs" />
+                <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/DatasmithSketchUpRuby2019.Build.cs" />
+                <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/DatasmithSketchUpRuby2020.Build.cs" />
+                <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/DatasmithSketchUpRuby2021.Build.cs" />
+                <VirtualDirectory Name="Private">
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpCamera.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpCamera.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpCommon.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpComponent.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpComponent.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpExportContext.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpExportContext.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpExporter.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpMaterial.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpMaterial.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpMesh.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpMesh.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpMetadata.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpMetadata.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpSDKBegins.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpSDKCeases.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpString.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpString.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpSummary.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpSummary.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpTexture.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpTexture.h" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpUtils.cpp" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithSketchUpRubyExporter/Private/DatasmithSketchUpUtils.h" />
+                </VirtualDirectory>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019-Linux-Debug" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019-Linux-DebugGame" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019-Linux-Shipping" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019-Linux-Test" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithSketchUpRuby2019-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithSketchUpRuby2019 Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

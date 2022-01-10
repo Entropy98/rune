@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="DatasmithRhino6">
+  <VirtualDirectory Name="Projects">
+    <VirtualDirectory Name="UnrealEngine">
+      <VirtualDirectory Name="Engine">
+        <VirtualDirectory Name="Source">
+          <VirtualDirectory Name="Programs">
+            <VirtualDirectory Name="Enterprise">
+              <VirtualDirectory Name="Datasmith">
+                <VirtualDirectory Name="DatasmithRhinoExporter">
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/DatasmithRhino6.Target.cs" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/DatasmithRhino6.Build.cs" />
+                  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/DatasmithRhino7.Build.cs" />
+                  <VirtualDirectory Name="DatasmithRhino7">
+                    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/DatasmithRhino7/DatasmithRhino7.cs" />
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Private">
+                    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/DatasmithRhinoExportContext.cs" />
+                    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/DatasmithRhinoExportOptions.cs" />
+                    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/DatasmithRhinoPlugin.cs" />
+                    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/DatasmithRhinoSceneExporter.cs" />
+                    <VirtualDirectory Name="Commands">
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/Commands/DatasmithDirectLinkConnectionsCommand.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/Commands/DatasmithDirectLinkSyncCommand.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/Commands/DatasmithExportCommand.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/Commands/DatasmithMessagesCommand.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/Commands/DatasmithToggleAutoSyncCommand.cs" />
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="DirectLink">
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/DirectLink/DatasmithRhinoChangeListener.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/DirectLink/DatasmithRhinoDirectLinkManager.cs" />
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="ElementExporters">
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/ElementExporters/DatasmithRhinoActorExporter.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/ElementExporters/DatasmithRhinoMaterialExporter.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/ElementExporters/DatasmithRhinoMeshExporter.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/ElementExporters/DatasmithRhinoTextureExporter.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/ElementExporters/IDatasmithRhinoElementExporter.cs" />
+                    </VirtualDirectory>
+                    <VirtualDirectory Name="Utils">
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/Utils/DatasmithRhinoLogManager.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/Utils/DatasmithRhinoProgressManager.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/Utils/DatasmithRhinoUniqueNameGenerator.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Private/Utils/DatasmithRhinoUtilities.cs" />
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="Properties">
+                    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/Properties/DefaultAssemblyInfo.cs" />
+                  </VirtualDirectory>
+                  <VirtualDirectory Name="SharedResources">
+                    <VirtualDirectory Name="Localization">
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/SharedResources/Localization/Resources.Designer.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/SharedResources/Localization/Resources.de.Designer.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/SharedResources/Localization/Resources.es.Designer.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/SharedResources/Localization/Resources.fr.Designer.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/SharedResources/Localization/Resources.ja.Designer.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/SharedResources/Localization/Resources.ko.Designer.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/SharedResources/Localization/Resources.pt.Designer.cs" />
+                      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/SharedResources/Localization/Resources.zh.Designer.cs" />
+                    </VirtualDirectory>
+                  </VirtualDirectory>
+                </VirtualDirectory>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/Enterprise/Datasmith/DatasmithRhinoExporter/DatasmithRhino6/DatasmithRhino6.cs" />
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6-Linux-Debug" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6-Linux-DebugGame" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6-Linux-Shipping" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6-Linux-Test" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./DatasmithRhino6-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh DatasmithRhino6 Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

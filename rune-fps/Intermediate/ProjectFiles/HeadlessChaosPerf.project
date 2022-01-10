@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="HeadlessChaosPerf">
+  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/HeadlessChaosPerf/HeadlessChaosPerf.Target.cs" />
+  <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/HeadlessChaosPerf/HeadlessChaosPerf.Build.cs" />
+  <VirtualDirectory Name="Private">
+    <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/HeadlessChaosPerf/Private/HeadlessChaosPerfApp.cpp" />
+    <VirtualDirectory Name="ChaosPerf">
+      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/HeadlessChaosPerf/Private/ChaosPerf/ChaosPerf.h" />
+      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/HeadlessChaosPerf/Private/ChaosPerf/ChaosPerfLog.h" />
+      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/HeadlessChaosPerf/Private/ChaosPerf/ChaosPerfProfiling.h" />
+      <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/HeadlessChaosPerf/Private/ChaosPerf/ChaosPerfTest.h" />
+      <VirtualDirectory Name="PerfTests">
+        <File Name="/home/entropy/Projects/UnrealEngine/Engine/Source/Programs/HeadlessChaosPerf/Private/ChaosPerf/PerfTests/ChaosPerfProfilerTests.cpp" />
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf-Linux-Debug" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Debug -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf-Linux-DebugGame" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux DebugGame -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Development -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf-Linux-Shipping" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Shipping -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf-Linux-Test" />
+      <General WorkingDirectory="/home/entropy/Projects/UnrealEngine/Engine/Binaries/Linux" Command="./HeadlessChaosPerf-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/entropy/Projects/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</BuildCommand>
+        <CleanCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean</CleanCommand>
+        <RebuildCommand>/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject" -clean
+/home/entropy/Projects/UnrealEngine/Engine/Build/BatchFiles/Linux/Build.sh HeadlessChaosPerf Linux Test -project="/home/entropy/Projects/rune/fps/rune/rune.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>
