@@ -1,0 +1,19 @@
+# Generated Binaries
+*.o
+*.bin
+*.d
+*.rsp
+
+# Generated Executables
+*.exe
+*.bat
+
+# Backups
+*.old
+*.swp
+DerivedDataCache/
+
+# Logs
+*.log
+CrashReportClientEditor/
+CrashReportClient/
